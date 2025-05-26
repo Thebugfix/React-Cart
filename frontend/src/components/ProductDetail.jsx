@@ -12,7 +12,7 @@ function ProductDetail() {
   }, [id]);
 
   const addToCart = () => {
-    axios.post('http://localhost:5000/api/cart', product)
+    axios.post('https://react-cart-b15z.onrender.com/api/cart', product)
       .then(() => alert('Added to cart!'));
   };
 
